@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<header>
+    
+<div class="container-fluid bg-primary">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="/ProyectosWeb/TiendaLamparas/public/index.php">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="/ProyectosWeb/TiendaLamparas/public/Nosotros.php">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="/ProyectosWeb/TiendaLamparas/public/Lamparas.php">Page</a>
+                  </li>
+                <!--  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item text-white nav-link" href="#">Action</a></li>
+                      <li><a class="dropdown-item text-white nav-link" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item text-white nav-link" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="/ProyectosWeb/TiendaLamparas/public/NuestrosClientes.php">Page</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+</div>
+</header>
+<body>
+    <div class="text-secondary text-center m-4" >
+        <h1>Registro cliente</h1>
+    </div>
+
+    <form class="p-5" action="AgregarLampara_b.php" method="POST">
+        <div class="mb-3">
+            <label class="form-label" for="nombre">Nombre</label>
+                <input type="text" name="nombre">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="tipo">Apellido Paterno</label>
+                <input type="text" name="paterno" id="paterno">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="modelo">Apellido Materno</label>
+            <input type="text" name="materno" id="materno">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="fabricante">Edad</label>
+            <input type="text" name="edad" id="edad">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="stock">Cantidad pedido</label>
+            <input type="text" name="pedido" id="pedido">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="stock">Direccion</label>
+            <input type="text" name="direccion" id="direccion">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="stock">Referencia del lugar</label>
+            <input type="text" name="referencia" id="referencia">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="stock">Codigo Postal</label>
+            <input type="text" name="cp" id="cp">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="stock">Ciudad</label>
+            <input type="text" name="ciudad" id="ciudad">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="stock">Pais</label>
+            <input type="text" name="pais" id="pais">
+        </div>
+
+        <div class="text-end mt-5">
+            <input class="btn btn-primary" type="submit" value="Agregar">
+        </div>
+
+    </form>
+</body>
+</html>
